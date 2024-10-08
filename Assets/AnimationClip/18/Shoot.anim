@@ -1,0 +1,283 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Shoot
+  serializedVersion: 6
+  m_Legacy: 1
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.00000011920929
+        value: {x: -0.93648016, y: -0.10395335, z: 0.30350372, w: 0.14171855}
+        inSlope: {x: 0.00000006891787, y: -0.00000008195639, z: 0.000000048428774,
+          w: 0.00000043958426}
+        outSlope: {x: 0.00000006891787, y: -0.00000008195639, z: 0.000000048428774,
+          w: 0.00000043958426}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.03333342
+        value: {x: -0.9352078, y: -0.10130084, z: 0.30439934, w: 0.14988552}
+        inSlope: {x: 0.039846934, y: -0.07964883, z: -0.008712269, w: 0.21117207}
+        outSlope: {x: 0.039846934, y: -0.07964883, z: -0.008712269, w: 0.21117207}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Minigun 1/FPS_PLAYER_Arm_left001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.00000011920929
+        value: {x: -0.6755903, y: -6.866221e-10, z: -6.291733e-10, w: 0.73727727}
+        inSlope: {x: 0.0000003427267, y: 0.0000005537544, z: -0.00000013094024, w: 0.00000031292439}
+        outSlope: {x: 0.0000003427267, y: 0.0000005537544, z: -0.00000013094024, w: 0.00000031292439}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.03333342
+        value: {x: -0.6691306, y: 0.000000036224836, z: -0.000000009352498, w: 0.7431448}
+        inSlope: {x: 0.09418765, y: 0.33185205, z: -0.07822794, w: 0.08035816}
+        outSlope: {x: 0.09418765, y: 0.33185205, z: -0.07822794, w: 0.08035816}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Minigun 1/Arms_Mesh
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.00000011920929
+        value: {x: -0.6755903, y: -6.866221e-10, z: -6.291733e-10, w: 0.73727727}
+        inSlope: {x: 0.0000003427267, y: 0.0000005537544, z: -0.00000013094024, w: 0.00000031292439}
+        outSlope: {x: 0.0000003427267, y: 0.0000005537544, z: -0.00000013094024, w: 0.00000031292439}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.03333342
+        value: {x: -0.6691306, y: 0.000000036224836, z: -0.000000009352498, w: 0.7431448}
+        inSlope: {x: 0.09418765, y: 0.33185205, z: -0.07822794, w: 0.08035816}
+        outSlope: {x: 0.09418765, y: 0.33185205, z: -0.07822794, w: 0.08035816}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Minigun 1/FPS_PLAYER_Arm_Right
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.00000011920929
+        value: {x: -0.000000049664873, y: 0.00000002104775, z: 0.3826826, w: -0.9238799}
+        inSlope: {x: -2.344791e-13, y: -1.1084467e-12, z: -0.00002002716, w: -0.000004172325}
+        outSlope: {x: -2.344791e-13, y: -1.1084467e-12, z: -0.00002002716, w: -0.000004172325}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.03333342
+        value: {x: -0.00000005393898, y: 4.3971654e-10, z: 0.000000110294835, w: -1}
+        inSlope: {x: -0.00000006396575, y: -0.0000002989938, z: -5.5524836, w: -1.1406275}
+        outSlope: {x: -0.00000006396575, y: -0.0000002989938, z: -5.5524836, w: -1.1406275}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Minigun 1/FPS_PLAYER_Arm_Right/Box007/Object002
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.22965363, y: 0.39806572, z: -0.17139907}
+        inSlope: {x: -0, y: -0, z: -0}
+        outSlope: {x: -0, y: -0, z: -0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.03333342
+        value: {x: -0.22965363, y: 0.39806572, z: -0.17139907}
+        inSlope: {x: -0, y: -0, z: -0}
+        outSlope: {x: -0, y: 0.025228523, z: 0.11445304}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Minigun 1/FPS_PLAYER_Arm_left001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.27034637, y: 0.39328346, z: -0.17139922}
+        inSlope: {x: -0, y: -0, z: -0}
+        outSlope: {x: -0, y: -0, z: -0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.03333342
+        value: {x: 0.27034637, y: 0.39328346, z: -0.17139922}
+        inSlope: {x: -0, y: -0, z: -0}
+        outSlope: {x: -0, y: -0.0000022888205, z: 0.0000005722051}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Minigun 1/Arms_Mesh
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.27034637, y: 0.39328346, z: -0.17139922}
+        inSlope: {x: -0, y: -0, z: -0}
+        outSlope: {x: -0, y: -0, z: -0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.03333342
+        value: {x: 0.27034637, y: 0.39328346, z: -0.17139922}
+        inSlope: {x: -0, y: -0, z: -0}
+        outSlope: {x: -0, y: -0.0000022888205, z: 0.0000005722051}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Minigun 1/FPS_PLAYER_Arm_Right
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.0007084568, y: -0.19911623, z: 0.76972425}
+        inSlope: {x: -0, y: -0, z: -0}
+        outSlope: {x: -0, y: -0, z: -0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.03333342
+        value: {x: -0.0007084568, y: -0.19911623, z: 0.76972425}
+        inSlope: {x: -0, y: -0, z: -0}
+        outSlope: {x: -0, y: -0, z: -0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Minigun 1/FPS_PLAYER_Arm_Right/Box007/Object002
+  m_ScaleCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.00000011920929
+        value: {x: 1, y: 1.0000001, z: 1.0000002}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.03333342
+        value: {x: 1, y: 1.0000001, z: 1.0000002}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Minigun 1/FPS_PLAYER_Arm_left001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.00000011920929
+        value: {x: 1, y: 0.99999994, z: 1.0000004}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.03333342
+        value: {x: 1, y: 0.99999994, z: 1.0000004}
+        inSlope: {x: -0.000001788141, y: -0.0000008940705, z: -0.000001788141}
+        outSlope: {x: -0.000001788141, y: -0.0000008940705, z: -0.000001788141}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Minigun 1/Arms_Mesh
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.00000011920929
+        value: {x: 1, y: 0.99999994, z: 1.0000004}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.03333342
+        value: {x: 1, y: 0.99999994, z: 1.0000004}
+        inSlope: {x: -0.000001788141, y: -0.0000008940705, z: -0.000001788141}
+        outSlope: {x: -0.000001788141, y: -0.0000008940705, z: -0.000001788141}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Minigun 1/FPS_PLAYER_Arm_Right
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.00000011920929
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.03333342
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Minigun 1/FPS_PLAYER_Arm_Right/Box007/Object002
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 30
+  m_WrapMode: 1
+  m_Bounds:
+    m_Center: {x: -0.018084884, y: 1.1617581, z: 0.8078678}
+    m_Extent: {x: 0.51843286, y: 0.39589512, z: 0.9468395}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 1
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []

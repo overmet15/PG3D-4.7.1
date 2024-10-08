@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20b2ff862084fa5dae619c96b29b0bf2, type: 3}
+  m_Name: PhotonServerSettings
+  m_EditorClassIdentifier: 
+  HostType: 1
+  ServerAddress: app-us.exitgamescloud.com
+  ServerPort: 5055
+  AppID: e8a38904-0cf2-4860-9214-4d21c5c1441a
+  RpcList:
+  - setIp
+  - setAnim
+  - delBonus
+  - addPlayer
+  - RunGame
+  - Chat
+  - InstantiateRpc
+  - OnAwakeRPC
+  - DestroyRpc
+  - goLevel
+  - delPlayer
+  - Popal
+  - setParentWeapon
+  - ReloadGun
+  - Killed
+  - pobeda
+  - minusLive
+  - fireFlash
+  - setParentWeaponPhoton
+  - ReloadGunPhoton
+  - KilledPhoton
+  - pobedaPhoton
+  - minusLivePhoton
+  - fireFlashPhoton
+  - delBonusPhoton
+  - SpawnOnNetwork
+  - setAnimPhoton
+  - setState
+  - imDeath
+  - addZombiManagerRPC
+  - addZombiManagerNewClientRPC
+  - addZombiNewClientRPC
+  - synchTime
+  - win
+  - addZombiRPC
+  - setHealthRPC
+  - flashRPC
+  - Death
+  - PlayZombieRunRPC
+  - PlayZombieAttackRPC
+  - minusLiveFromZombiRPC
+  - addBonusPhoton
+  - addBonusPhotonNewClientRPC
+  - HoleRPC
+  - ImKilled
+  - SendChatMessage
+  - ZombiManagerZamenaIdRPC
+  - ZombiZamenaIdRPC
+  - setIdRPC
+  - setMySkin
+  - setMySkinLocal
+  - setMyCommand
+  - CountKillsCommandSynch
+  - plusCountKillsCommand
+  - imKilled
+  - imNotKilled
+  - zaprosZombiManager
+  - otvetNAzaprosZombiManager
+  - setCapeRPC
+  - setHatRPC
+  - SetNickName
+  - MinusLiveRPC
+  - MinusLiveRPCPhoton
+  - SetAnim
+  DisableAutoOpenWizard: 0

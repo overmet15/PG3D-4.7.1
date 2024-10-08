@@ -1,0 +1,399 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1867625283833241
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4784068778423694}
+  - 114: {fileID: 114866458289577389}
+  m_Layer: 0
+  m_Name: InGameInterfaceAtlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4784068778423694
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867625283833241}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &114866458289577389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867625283833241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  material: {fileID: 2100000, guid: 07a85d721dd43bc469b08968677f5510, type: 2}
+  sprites:
+  - name: heart
+    outer:
+      serializedVersion: 2
+      x: 129
+      y: 103
+      width: 52
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 129
+      y: 103
+      width: 52
+      height: 49
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ammo_icon
+    outer:
+      serializedVersion: 2
+      x: 132
+      y: 188
+      width: 40
+      height: 28
+    inner:
+      serializedVersion: 2
+      x: 132
+      y: 188
+      width: 40
+      height: 28
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: S_off
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 281
+      width: 182
+      height: 63
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 281
+      width: 182
+      height: 63
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: crosshair
+    outer:
+      serializedVersion: 2
+      x: 132
+      y: 230
+      width: 50
+      height: 50
+    inner:
+      serializedVersion: 2
+      x: 132
+      y: 230
+      width: 50
+      height: 50
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: pause
+    outer:
+      serializedVersion: 2
+      x: 183
+      y: 89
+      width: 70
+      height: 62
+    inner:
+      serializedVersion: 2
+      x: 183
+      y: 89
+      width: 70
+      height: 62
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: pause_n
+    outer:
+      serializedVersion: 2
+      x: 183
+      y: 152
+      width: 70
+      height: 62
+    inner:
+      serializedVersion: 2
+      x: 183
+      y: 152
+      width: 70
+      height: 62
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: elixir
+    outer:
+      serializedVersion: 2
+      x: 183
+      y: 27
+      width: 67
+      height: 61
+    inner:
+      serializedVersion: 2
+      x: 183
+      y: 27
+      width: 67
+      height: 61
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: S_0
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 217
+      width: 131
+      height: 63
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 217
+      width: 131
+      height: 63
+    rotated: 0
+    paddingLeft: 0.97709924
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: S_n
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 153
+      width: 131
+      height: 63
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 153
+      width: 131
+      height: 63
+    rotated: 0
+    paddingLeft: 0.97709924
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ranks_n
+    outer:
+      serializedVersion: 2
+      x: 183
+      y: 215
+      width: 72
+      height: 63
+    inner:
+      serializedVersion: 2
+      x: 183
+      y: 215
+      width: 72
+      height: 63
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ranks
+    outer:
+      serializedVersion: 2
+      x: 409
+      y: 281
+      width: 72
+      height: 63
+    inner:
+      serializedVersion: 2
+      x: 409
+      y: 281
+      width: 72
+      height: 63
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: armor
+    outer:
+      serializedVersion: 2
+      x: 132
+      y: 157
+      width: 33
+      height: 30
+    inner:
+      serializedVersion: 2
+      x: 132
+      y: 157
+      width: 33
+      height: 30
+    rotated: 0
+    paddingLeft: 0.030303031
+    paddingRight: 0.030303031
+    paddingTop: 0.033333335
+    paddingBottom: 0.033333335
+  - name: coin_frame
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 27
+      width: 128
+      height: 62
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 27
+      width: 128
+      height: 62
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: coin_frame_ON
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 90
+      width: 128
+      height: 62
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 90
+      width: 128
+      height: 62
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: pon
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 345
+      width: 509
+      height: 167
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 345
+      width: 509
+      height: 167
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0.00589391
+    paddingTop: 0
+    paddingBottom: 0.5329341
+  - name: gold_armor
+    outer:
+      serializedVersion: 2
+      x: 129
+      y: 59
+      width: 33
+      height: 30
+    inner:
+      serializedVersion: 2
+      x: 129
+      y: 59
+      width: 33
+      height: 30
+    rotated: 0
+    paddingLeft: 0.030303031
+    paddingRight: 0.030303031
+    paddingTop: 0.033333335
+    paddingBottom: 0.033333335
+  - name: crystal_armor
+    outer:
+      serializedVersion: 2
+      x: 129
+      y: 28
+      width: 33
+      height: 30
+    inner:
+      serializedVersion: 2
+      x: 129
+      y: 28
+      width: 33
+      height: 30
+    rotated: 0
+    paddingLeft: 0.030303031
+    paddingRight: 0.030303031
+    paddingTop: 0.033333335
+    paddingBottom: 0.033333335
+  - name: ob_skip_n
+    outer:
+      serializedVersion: 2
+      x: 296
+      y: 279
+      width: 112
+      height: 65
+    inner:
+      serializedVersion: 2
+      x: 296
+      y: 279
+      width: 112
+      height: 65
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ob_skip
+    outer:
+      serializedVersion: 2
+      x: 183
+      y: 279
+      width: 112
+      height: 65
+    inner:
+      serializedVersion: 2
+      x: 183
+      y: 279
+      width: 112
+      height: 65
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1867625283833241}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

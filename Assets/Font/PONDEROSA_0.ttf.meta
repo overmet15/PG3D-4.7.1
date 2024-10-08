@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 80e39e2338a280f4ab3b9dee1fb91e65
+timeCreated: 1723225353
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 2
+  name:
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 1
+  characterPadding: 0
+  includeFontData: 1
+  use2xBehaviour: 0
+  fontNames:
+  - Ponderosa
+  customCharacters:
+  fontRenderingMode: 0
+  output:
+    hasEmptyFontData: 0
+  userData:
