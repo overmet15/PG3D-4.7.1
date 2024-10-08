@@ -1,4 +1,4 @@
-# Pixel Gun 4.7.5 Decompilation (Work In Progress)
+# Pixel Gun 4.7.1 Decompilation (Work In Progress)
 
 ## Contents
 1. [Setup](#setup)
