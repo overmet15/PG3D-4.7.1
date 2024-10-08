@@ -131,6 +131,7 @@ public class JoystickSharp : MonoBehaviour
 
 	private void Start()
 	{
+		WindowsMouseManager.Instance.SetMouseLock(true);
 		if (!touchPad)
 		{
 			guiPixelInset = new Rect(0f, 0f, 128f, 128f);
@@ -244,19 +245,22 @@ public class JoystickSharp : MonoBehaviour
 	private void Update()
 	{
 		//PC Stuff
-		if (Input.GetMouseButton(0) && WindowsMouseManager.Instance.MouseLocked && (!Defs.IsTraining || TrainingController.stepTraining >= TrainingController.stepTrainingList["TapToShoot"]))
-		{
-			_playerGun.GetComponent<Player_move_c>().ShotPressed();
-		}
-		if (Input.GetKeyDown(KeyCode.R) && (!Defs.IsTraining || TrainingController.stepTraining >= TrainingController.stepTrainingList["TapToShoot"]))
-		{
-			_playerGun.GetComponent<Player_move_c>().ReloadPressed();
-		}
-		if (Input.GetMouseButtonDown(1) && _weaponManager.currentWeaponSounds != null && _weaponManager.currentWeaponSounds.isZooming)
-		{
-			_playerGun.GetComponent<Player_move_c>().ZoomPress();
-		}
-		if (Input.GetKeyDown(KeyCode.Space)) jumpPressed = true;
+		if (touchPad) // Avoid doubling of inputs and stuff
+        {
+            if (Input.GetMouseButton(0) && WindowsMouseManager.Instance.MouseLocked && (!Defs.IsTraining || TrainingController.stepTraining >= TrainingController.stepTrainingList["TapToShoot"]))
+            {
+                _playerGun.GetComponent<Player_move_c>().ShotPressed();
+            }
+            if (Input.GetKeyDown(KeyCode.R) && (!Defs.IsTraining || TrainingController.stepTraining >= TrainingController.stepTrainingList["TapToShoot"]))
+            {
+                _playerGun.GetComponent<Player_move_c>().ReloadPressed();
+            }
+            if (Input.GetMouseButtonDown(1) && _weaponManager.currentWeaponSounds != null && _weaponManager.currentWeaponSounds.isZooming)
+            {
+                _playerGun.GetComponent<Player_move_c>().ZoomPress();
+            }
+            if (Input.GetKeyDown(KeyCode.Space)) jumpPressed = true;
+        }
 
 		if (!enumeratedJoysticks)
 		{

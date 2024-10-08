@@ -2774,8 +2774,8 @@ public sealed class Player_move_c : MonoBehaviour
 	private void Update()
 	{
 		if (Input.GetKeyDown(KeyCode.Escape) && !Shop.sharedShop.inShop) SwitchPause();
-		float mouseScroll = Input.GetAxis("Mouse ScrollWheel");
-		if (Input.GetKeyDown(KeyCode.Alpha2))
+		float mouseScroll = Input.GetAxisRaw("Mouse ScrollWheel");
+		if (mouseScroll >= 0.1f)
 		{
             if ((isMulti && isMine) || !isMulti)
             {
@@ -2786,32 +2786,26 @@ public sealed class Player_move_c : MonoBehaviour
                 _weaponManager.CurrentWeaponIndex++;
                 int count = _weaponManager.playerWeapons.Count;
                 count = ((count == 0) ? 1 : count);
-                if (_weaponManager.CurrentWeaponIndex == _weaponManager.playerWeapons.Count +1) _weaponManager.CurrentWeaponIndex = 0;
                 _weaponManager.CurrentWeaponIndex %= count;
                 ChangeWeapon(_weaponManager.CurrentWeaponIndex, false);
             }
             canReceiveSwipes = false;
             StartCoroutine(SetCanReceiveSwipes());
-            slideMagnitudeX = 0f;
         }
-		else if (Input.GetKeyDown(KeyCode.Alpha1))
+		else if (mouseScroll <= -0.1f)
 		{
             if ((isMulti && isMine) || !isMulti)
             {
-                if (Defs.IsTraining && TrainingController.stepTraining == TrainingController.stepTrainingList["SwipeWeapon"])
-                {
-                    TrainingController.isNextStep = TrainingController.stepTrainingList["SwipeWeapon"];
-                }
                 _weaponManager.CurrentWeaponIndex--;
-                int count = _weaponManager.playerWeapons.Count;
-                count = ((count == 0) ? 1 : count);
-				if (_weaponManager.CurrentWeaponIndex == -1) _weaponManager.CurrentWeaponIndex = _weaponManager.playerWeapons.Count;
-                _weaponManager.CurrentWeaponIndex %= count;
+                if (_weaponManager.CurrentWeaponIndex < 0)
+                {
+                    _weaponManager.CurrentWeaponIndex = _weaponManager.playerWeapons.Count - 1;
+                }
+                _weaponManager.CurrentWeaponIndex %= _weaponManager.playerWeapons.Count;
                 ChangeWeapon(_weaponManager.CurrentWeaponIndex, false);
             }
             canReceiveSwipes = false;
             StartCoroutine(SetCanReceiveSwipes());
-            slideMagnitudeX = 0f;
         }
 		inGameTime += Time.deltaTime;
 		if (isCompany && myCommand == 0 && myTable != null)
@@ -2941,6 +2935,7 @@ public sealed class Player_move_c : MonoBehaviour
 		if (isZooming)
 		{
 			ZoomPress();
+			// How does it even work
 		}
 		if (isMulti)
 		{
