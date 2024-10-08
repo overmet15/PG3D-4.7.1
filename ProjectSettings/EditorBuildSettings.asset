@@ -2,82 +2,228 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1045 &1
 EditorBuildSettings:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
+  serializedVersion: 2
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/AppCenter.unity
-  - enabled: 1
-    path: Assets/Loading.unity
-  - enabled: 1
-    path: Assets/Sourсe/Scenes/City.unity
-  - enabled: 1
-    path: Assets/Sourсe/Scenes/Arena.unity
-  - enabled: 1
-    path: Assets/Sourсe/Scenes/Hospital.unity
-  - enabled: 1
-    path: Assets/Sourсe/Scenes/Gluk.unity
+    guid: 51e622ccf7d2a5a40a47605ae5fb3f82
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/SkinManager/Scene/SkinEditor.unity
+    guid: e324a1874e967824fb94954c75d5ab2e
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Cementery.unity
+    path: Assets/Scenes/CampaignChooseBox.unity
+    guid: 364fb2b804b99bf40b6d16d337715f83
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Maze.unity
+    path: Assets/Scenes/CampaignLoading.unity
+    guid: 012fd637e0d8d0e45bdd3e5b0384cf0b
+  - enabled: 0
+    path: Assets/Scenes/Cementery.unity
+    guid: e208a8205b6784b4f8d717874772b0d6
   - enabled: 1
-    path: Assets/ConnectScene.unity
+    path: Assets/Scenes/ChooseLevel.unity
+    guid: 6be53ddeb56e1a04aa13a8d0e330d9ce
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Area52.unity
+    path: Assets/Scenes/ConnectScene.unity
+    guid: 0523bba3c376f5744baf998cb50db61d
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Jail.unity
+    path: Assets/Scenes/LevelArt.unity
+    guid: d8db03d547edbb3418b8a481d6ea0d6c
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Training.unity
+    path: Assets/Scenes/LevelComplete.unity
+    guid: f1a33fa5a6e624440b0562b6764bb5a5
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Parkour.unity
+    path: Assets/Scenes/LevelToCompleteProm.unity
+    guid: eeebbdd91ed15bf4c9069cefba726d26
   - enabled: 1
-    path: Assets/ChooseLevel.unity
+    path: Assets/Scenes/Loading.unity
+    guid: 915faf0f11bb0c14aac098b0ed9431de
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Pool.unity
+    path: Assets/Scenes/ProfileShop.unity
+    guid: 2d99889b549d4fa4fae97a30e4e4ed0b
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Slender.unity
+    path: Assets/Scenes/PromScene.unity
+    guid: 24dc810311624f94b836ca727780a185
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Castle.unity
+    path: Assets/Scenes/Etc/Area52.unity
+    guid: c0eb46ceba1e5fb419ff0bc9fda57464
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Coliseum.unity
+    path: Assets/Scenes/Etc/Arena.unity
+    guid: f387dc563d909e2458beaa80a750c792
   - enabled: 1
-    path: Assets/LevelComplete.unity
+    path: Assets/Scenes/Etc/Assault.unity
+    guid: 1cad265493728664eb0658afaf8623e5
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Gluk_2.unity
+    path: Assets/Scenes/Etc/Aztec.unity
+    guid: 9d053bfcea917f54b85abee71ceebaf0
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Menu_Winter_Utopia.unity
+    path: Assets/Scenes/Etc/Bridge.unity
+    guid: b8ca02d3cd4133d43a654b50a9cd29be
   - enabled: 1
-    path: Assets/CampaignChooseBox.unity
+    path: Assets/Scenes/Etc/Castle.unity
+    guid: 53b611074e9bfe74e9d1046b38ca17bd
   - enabled: 1
-    path: Assets/ProfileShop.unity
+    path: Assets/Scenes/Etc/Cementery.unity
+    guid: 866ccccc19f9b034c8377c557a44662c
   - enabled: 1
-    path: Assets/CampaignLoading.unity
+    path: Assets/Scenes/Etc/City.unity
+    guid: c551dbba5069cf74d932083566b9218a
   - enabled: 1
-    path: Assets/LevelArt.unity
+    path: Assets/Scenes/Etc/Coliseum.unity
+    guid: 6772856aae61da243b1cb8de97041bd4
   - enabled: 1
-    path: Assets/PromScene.unity
+    path: Assets/Scenes/Etc/Coliseum_MP.unity
+    guid: 48d3cdc84c1ebe34e883fc56c22c59b4
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Sky_islands.unity
+    path: Assets/Scenes/Etc/Dust.unity
+    guid: a62453802d2dc3e42abded5f63090145
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Dust.unity
+    path: Assets/Scenes/Etc/Farm.unity
+    guid: 67ff81937cd78304e80bb9310d7a49df
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Bridge.unity
+    path: Assets/Scenes/Etc/Gluk.unity
+    guid: e8fa0685ccd93f64ea8b1a42eac02680
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Farm.unity
+    path: Assets/Scenes/Etc/Gluk_2.unity
+    guid: 30529a5b88a25a147a873802e97a88aa
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Utopia.unity
+    path: Assets/Scenes/Etc/Hospital.unity
+    guid: 1c167b08eb7bca04a9dc8f928075c083
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Winter.unity
+    path: Assets/Scenes/Etc/Jail.unity
+    guid: 9149f8fdcb6aaf74bbc4e81422d99517
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Assault.unity
+    path: Assets/Scenes/Etc/Maze.unity
+    guid: 9ab13b181cc9c604a95c37ab3a434803
   - enabled: 1
-    path: Assets/Sourсe/Scenes/School.unity
+    path: Assets/Scenes/Etc/Menu_Winter_Utopia.unity
+    guid: 46b6cdfc07e9d404e82800992eff399a
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Aztec.unity
+    path: Assets/Scenes/Etc/Parkour.unity
+    guid: 0ca1aae2fd2d20c43a9260c8190ae10e
   - enabled: 1
-    path: Assets/LevelToCompleteProm.unity
+    path: Assets/Scenes/Etc/Pool.unity
+    guid: 026fe16b92f649e4bae8ddff667849ea
   - enabled: 1
-    path: Assets/Sourсe/Scenes/Coliseum_MP.unity
+    path: Assets/Scenes/Etc/School.unity
+    guid: a1f2b941d592dcd47888e485071b9d07
+  - enabled: 1
+    path: Assets/Scenes/Etc/Sky_islands.unity
+    guid: 5c0aa4039a054ab48bcdadf50df728fe
+  - enabled: 1
+    path: Assets/Scenes/Etc/Slender.unity
+    guid: bf49440f3d6bc0646b553a7d4b9cf937
+  - enabled: 1
+    path: Assets/Scenes/Etc/Training.unity
+    guid: 3dd1f536ba4c7dd439be8b5621d021a4
+  - enabled: 1
+    path: Assets/Scenes/Etc/Utopia.unity
+    guid: e0609bd5d697e264aa68e62de71541ed
+  - enabled: 1
+    path: Assets/Scenes/Etc/Winter.unity
+    guid: 1005e1271c4d47e47a0e390506ca8397
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000

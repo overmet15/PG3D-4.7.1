@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+	public bool inShop;
+
 	public int trainState = -1;
 
 	public static Shop sharedShop = null;
@@ -643,6 +645,7 @@ public class Shop : MonoBehaviour
 
 	public void ShowShop(bool show)
 	{
+		inShop = show;
 		if (show)
 		{
 			_RunBlinks();

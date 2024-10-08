@@ -144,11 +144,11 @@ public sealed class Controller : MonoBehaviour
 
 	private void WriteSkinsToGallery()
 	{
-		object[] array = Resources.LoadAll(SkinMaker_folderName);
+        Texture2D[] array = Resources.LoadAll<Texture2D>(SkinMaker_folderName);
 		for (int i = 0; i < array.Length; i++)
 		{
 			string nm = SkinMaker_baseName + i;
-			SkinsManager.SaveTextureToGallery((Texture2D)array[i], nm);
+			SkinsManager.SaveTextureToGallery(array[i], nm);
 		}
 	}
 
@@ -165,7 +165,7 @@ public sealed class Controller : MonoBehaviour
 		}
 		if (!Load.LoadBool(CreateSpisokSkinov_sett))
 		{
-			object[] array2 = Resources.LoadAll(folderName);
+			Texture2D[] array2 = Resources.LoadAll<Texture2D>(folderName);
 			if (PlayerPrefs.GetInt(Defs.SkinEditorMode, 0) == 0)
 			{
 				Debug.Log("arrTextur.length: " + array2.Length + "\narrTextur: " + array2);
@@ -180,7 +180,14 @@ public sealed class Controller : MonoBehaviour
 				string text = baseName + i;
 				arrTitleSkin.Add(arrVremTitle[i]);
 				arrNameSkin.Add(text);
-				SkinsManager.SaveTextureWithName((Texture2D)array2[i], text, false);
+				try
+                {
+                    SkinsManager.SaveTextureWithName(array2[i], text, false);
+                }
+				catch (Exception ex)
+				{
+					Debug.Log(ex);
+				}
 			}
 			string[] variable = arrNameSkin.ToArray(typeof(string)) as string[];
 			Debug.Log("arrStringNameSkin");
@@ -255,7 +262,6 @@ public sealed class Controller : MonoBehaviour
 		spisokSkinovContoller.showEnabled = false;
 		arrNameSkin = new ArrayListWrapper();
 		arrTitleSkin = new ArrayListWrapper();
-		Debug.Log("Application.persistentDataPath: " + Application.persistentDataPath);
 		string text = "Multiplayer Skins";
 		string folderName = ((PlayerPrefs.GetInt(Defs.SkinEditorMode, 0) != 0) ? text : SkinMaker_folderName);
 		string baseName = ((PlayerPrefs.GetInt(Defs.SkinEditorMode, 0) != 0) ? Defs.SkinBaseName : SkinMaker_baseName);

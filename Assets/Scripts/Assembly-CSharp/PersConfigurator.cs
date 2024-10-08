@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class PersConfigurator : MonoBehaviour
@@ -16,8 +17,10 @@ public class PersConfigurator : MonoBehaviour
 
 	private IEnumerator Start()
 	{
-		yield return null;
-		ObjectLabel.currentCamera = Camera.main;
+        //yield return null;
+        if (!Directory.Exists(Application.persistentDataPath + "/GameData")) Directory.CreateDirectory(Application.persistentDataPath + "/GameData");
+
+        ObjectLabel.currentCamera = Camera.main;
 		GameObject ol = Resources.Load("ObjectLabel") as GameObject;
 		_label = Object.Instantiate(ol) as GameObject;
 		_label.GetComponent<ObjectLabel>().target = base.transform;
@@ -34,14 +37,13 @@ public class PersConfigurator : MonoBehaviour
 		List<Weapon> boughtWeapons = new List<Weapon>();
 		foreach (Weapon pw2 in weaponManager.playerWeapons)
         {
-            if (WeaponManager.tagToStoreIDMapping == null || pw2 == null || pw2.weaponPrefab == null)
+            while (WeaponManager.tagToStoreIDMapping == null || pw2 == null || pw2.weaponPrefab == null)
             {
-                StartCoroutine(Start());
-                yield break;
+				yield return null;
             }
             //else if (WeaponManager.tagToStoreIDMapping.ContainsKey(pw2.weaponPrefab.tag))
-			//{
-				boughtWeapons.Add(pw2);
+            //{
+            boughtWeapons.Add(pw2);
 			//}
 		}
 		if (boughtWeapons.Count == 0)

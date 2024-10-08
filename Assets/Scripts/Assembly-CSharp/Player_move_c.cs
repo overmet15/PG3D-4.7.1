@@ -2773,7 +2773,8 @@ public sealed class Player_move_c : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Escape)) SwitchPause();
+		if (Input.GetKeyDown(KeyCode.Escape) && !Shop.sharedShop.inShop) SwitchPause();
+		float mouseScroll = Input.GetAxis("Mouse ScrollWheel");
 		if (Input.GetKeyDown(KeyCode.Alpha2))
 		{
             if ((isMulti && isMine) || !isMulti)
