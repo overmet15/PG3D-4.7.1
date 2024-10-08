@@ -62,7 +62,12 @@ Work In Progress.
 Bugs that weren't in original/unmodded version of game are allowed to be fixed.
 Also Shader/Material/Other errors that weren't in original version of the game are allowed.
 
+It is also allowed to change stuff to make PC gameplay better, and not change the og game at the same time, for example
+Player could unpause game while being in shop, which leads to dying, we had to fix that.
+Yes, it does change core of the game a little bit, but doesnt really change the game itself.
+
 If you want to add guns/maps/other stuff into the game, this is not allowed, please make fork/copy of repo and then do whatever you want.
 
+For other stuff, if you are not sure, just make a request, ill accept it or explain why i wont.
 ## Credits
 Everything is currently done by overmet15.
