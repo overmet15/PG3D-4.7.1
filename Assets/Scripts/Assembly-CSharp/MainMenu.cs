@@ -735,7 +735,7 @@ public sealed class MainMenu : MonoBehaviour
 	{
 		if (_version == null)
 		{
-			_version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+			_version = Application.version; //.GetExecutingAssembly().GetName().Version.ToString();
 		}
 		if (_versionLabelStyle == null)
 		{
@@ -794,11 +794,11 @@ public sealed class MainMenu : MonoBehaviour
 		{
 			if (Defs.isSoundMusic)
 			{
-				GameObject.FindGameObjectWithTag("MenuBackgroundMusic").GetComponent<MenuBackgroundMusic>().Play();
+                FindObjectOfType<MenuBackgroundMusic>().Play();
 			}
 			else
 			{
-				GameObject.FindGameObjectWithTag("MenuBackgroundMusic").GetComponent<MenuBackgroundMusic>().Stop();
+				FindObjectOfType<MenuBackgroundMusic>().Stop();
 			}
 		}
 		Rect position3 = new Rect(left, 344f * num, (float)soundOnOff.normal.background.width * num, (float)soundOnOff.normal.background.height * num);

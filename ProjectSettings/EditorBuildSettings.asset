@@ -8,39 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AppCenter.unity
     guid: 51e622ccf7d2a5a40a47605ae5fb3f82
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/SkinManager/Scene/SkinEditor.unity
     guid: e324a1874e967824fb94954c75d5ab2e
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/CampaignChooseBox.unity
     guid: 364fb2b804b99bf40b6d16d337715f83
   - enabled: 1
     path: Assets/Scenes/CampaignLoading.unity
     guid: 012fd637e0d8d0e45bdd3e5b0384cf0b
-  - enabled: 0
-    path: Assets/Scenes/Cementery.unity
-    guid: e208a8205b6784b4f8d717874772b0d6
   - enabled: 1
     path: Assets/Scenes/ChooseLevel.unity
     guid: 6be53ddeb56e1a04aa13a8d0e330d9ce
@@ -65,78 +41,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PromScene.unity
     guid: 24dc810311624f94b836ca727780a185
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Etc/Area52.unity
     guid: c0eb46ceba1e5fb419ff0bc9fda57464
@@ -215,15 +119,3 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Etc/Winter.unity
     guid: 1005e1271c4d47e47a0e390506ca8397
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
