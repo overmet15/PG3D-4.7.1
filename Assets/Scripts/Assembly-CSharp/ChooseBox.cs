@@ -127,7 +127,7 @@ internal sealed class ChooseBox : MonoBehaviour
 	private void selectMap()
 	{
 		float coef = Defs.Coef;
-#if !UNITY_ANDROID
+#if UNITY_STANDALONE
 		float axis = Input.GetAxis("Mouse ScrollWheel");
 		if (axis > 0f)
 		{

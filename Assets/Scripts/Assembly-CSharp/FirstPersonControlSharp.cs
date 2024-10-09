@@ -186,7 +186,7 @@ internal sealed class FirstPersonControlSharp : MonoBehaviour
 	private void Update()
 	{
 		oldPos = base.transform.position;
-		#if UNITY_ANDROID
+		#if !UNITY_STANDALONE
 		Vector3 vector = base.transform.TransformDirection(new Vector3(moveTouchPad.position.x * (float)((!character.isGrounded) ? 1 : 1), 0f, moveTouchPad.position.y));
 		#else
 		Vector3 vector = base.transform.TransformDirection(new Vector3(Input.GetAxis("Horizontal") * (float)((!character.isGrounded) ? 1 : 1), 0f, Input.GetAxis("Vertical")));
@@ -201,7 +201,7 @@ internal sealed class FirstPersonControlSharp : MonoBehaviour
 		}
 		vector.y = 0f;
 		vector.Normalize();
-		#if UNITY_ANDROID
+		#if !UNITY_STANDALONE
 		Vector2 vector2 = new Vector2(Mathf.Abs(moveTouchPad.position.x), Mathf.Abs(moveTouchPad.position.y));
 
 		if (vector2.y > vector2.x)
@@ -296,7 +296,7 @@ internal sealed class FirstPersonControlSharp : MonoBehaviour
         if (_moveC != null) num2 *= ((!_moveC.isZooming) ? 1f : 0.5f);
         float @float = PlayerPrefs.GetFloat("SensitivitySett", 12f);
         if (_moveC == null && _playerGun != null) _moveC = _playerGun.GetComponent<Player_move_c>();
-#if UNITY_ANDROID
+#if !UNITY_STANDALONE
 		if ((bool)rotateTouchPad)
 		{
 			vector3 = rotateTouchPad.position;

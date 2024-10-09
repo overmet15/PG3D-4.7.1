@@ -518,9 +518,8 @@ public sealed class ConnectGUI : MonoBehaviour
 
 	private void Update()
 	{
-		if (Application.isEditor)
-		{
-			float axis = Input.GetAxis("Mouse ScrollWheel");
+#if UNITY_STANDALONE
+		float axis = Input.GetAxis("Mouse ScrollWheel");
 			if (axis != 0f)
 			{
 				Debug.Log("Scroll wheel count: " + axis);
@@ -539,9 +538,9 @@ public sealed class ConnectGUI : MonoBehaviour
 				if (selectMapIndex == ((PlayerPrefs.GetInt("COOP", 0) == 1) ? masMapCOOP.Length : ((PlayerPrefs.GetInt("company", 0) != 1) ? masMap.Length : masMapCompany.Length)))
 				{
 					selectMapIndex = 0;
-				}
-			}
-		}
+            }
+#endif
+	}
 		slideScroll();
 		if (typeConnect == 1 && PhotonNetwork.connectionState == ConnectionState.Disconnected)
 		{

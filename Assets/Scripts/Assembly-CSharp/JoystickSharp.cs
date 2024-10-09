@@ -244,8 +244,9 @@ public class JoystickSharp : MonoBehaviour
 
 	private void Update()
 	{
-		//PC Stuff
-		if (touchPad) // Avoid doubling of inputs and stuff
+#if UNITY_STANDALONE
+        //PC Stuff
+        if (touchPad) // Avoid doubling of inputs and stuff
         {
             if (Input.GetMouseButton(0) && WindowsMouseManager.Instance.MouseLocked && (!Defs.IsTraining || TrainingController.stepTraining >= TrainingController.stepTrainingList["TapToShoot"]))
             {
@@ -261,7 +262,7 @@ public class JoystickSharp : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.Space)) jumpPressed = true;
         }
-
+#endif
 		if (!enumeratedJoysticks)
 		{
 			joysticks = Object.FindObjectsOfType(typeof(JoystickSharp)) as JoystickSharp[];
@@ -421,8 +422,8 @@ public class JoystickSharp : MonoBehaviour
 
 	private void OnGUI()
 	{
-		#if UNITY_ANDROID
-		Color color = GUI.color;
+#if !UNITY_STANDALONE
+        Color color = GUI.color;
 		GUI.color = new Color(color.r, color.g, color.b, 38f);
 		if ((!Defs.IsTraining || !touchPad || TrainingController.stepTraining >= TrainingController.stepTrainingList["GetTheCoin"]) && (!Defs.IsTraining || touchPad || TrainingController.stepTraining >= TrainingController.stepTrainingList["TapToMove"]))
 		{
