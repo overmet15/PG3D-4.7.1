@@ -793,11 +793,14 @@ public sealed class NetworkStartTable : MonoBehaviour
 	[RPC]
 	private void addZombiManagerRPC(Vector3 pos, Quaternion rot, int id1)
 	{
-		GameObject gameObject = FindObjectOfType<ZombiManager>().gameObject;
-		if (gameObject == null)
+        ZombiManager zombiManager = FindObjectOfType<ZombiManager>();
+		GameObject gameObject = null;
+		if (zombiManager == null)
 		{
 			gameObject = Instantiate(zombieManagerPrefab, pos, rot);
+			zombiManager = gameObject.GetComponent<ZombiManager>();
 		}
+		else gameObject = zombiManager.gameObject;
 		PhotonView component = gameObject.GetComponent<PhotonView>();
 		component.viewID = id1;
 	}
