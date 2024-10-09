@@ -739,9 +739,39 @@ public sealed class NetworkStartTable : MonoBehaviour
 		_cam = GameObject.FindGameObjectWithTag("CamTemp");
 		_cam.SetActive(false);
 		_weaponManager.useCam = null;
-		zoneCreatePlayer = GameObject.FindGameObjectsWithTag(isCOOP ? "MultyPlayerCreateZoneCOOP" : ((!isCompany) ? "MultyPlayerCreateZone" : ("MultyPlayerCreateZoneCommand" + myCommand)));
-		GameObject gameObject = zoneCreatePlayer[UnityEngine.Random.Range(0, zoneCreatePlayer.Length)];
-		BoxCollider component = gameObject.GetComponent<BoxCollider>();
+        // Create a list to store the filtered GameObjects
+        List<GameObject> zoneCreatePlayer = new List<GameObject>(); // Replaced a lot of code here cuz of runtime errors
+
+        // Get all GameObjects in the scene
+        GameObject[] allObjects = GameObject.FindObjectsOfType<GameObject>();
+		GameObject gameObject = null; 
+		string targetTag;
+        if (isCOOP) targetTag = "MultyPlayerCreateZoneCOOP";
+        else if (!isCompany) targetTag = "MultyPlayerCreateZone";
+        else targetTag = "MultyPlayerCreateZoneCommand" + myCommand;
+
+        // Manually filter by tag
+        foreach (Transform obj in GameObject.Find("GameObjects").transform)
+        {
+
+            // Check if the object has the required tag
+            if (obj.gameObject.CompareTag(targetTag))
+            {
+                zoneCreatePlayer.Add(obj.gameObject);
+            }
+        }
+
+        // Randomly select one of the manually found GameObjects
+        if (zoneCreatePlayer.Count > 0)
+        {
+            gameObject = zoneCreatePlayer[UnityEngine.Random.Range(0, zoneCreatePlayer.Count)];
+        }
+        else
+        {
+            Debug.LogWarning("No zones found with the specified tag!");
+        }
+
+        BoxCollider component = gameObject.GetComponent<BoxCollider>();
 		Vector2 vector = new Vector2(component.size.x * gameObject.transform.localScale.x, component.size.z * gameObject.transform.localScale.z);
 		Rect rect = new Rect(gameObject.transform.position.x - vector.x / 2f, gameObject.transform.position.z - vector.y / 2f, vector.x, vector.y);
 		Vector3 position = new Vector3(rect.x + UnityEngine.Random.Range(0f, rect.width), gameObject.transform.position.y + 2f, rect.y + UnityEngine.Random.Range(0f, rect.height));
