@@ -984,7 +984,7 @@ public sealed class MainMenu : MonoBehaviour
 			{
 				NGUITools.PlaySound(clip);
 			}
-			GameObject.FindGameObjectWithTag("ExperienceController").GetComponent<ExperienceController>().addExperience(15);
+			FindObjectOfType<ExperienceController>().addExperience(15);
 		}
 		expController = GameObject.FindObjectOfType<ExperienceController>();
 		expController.isShowRanks = true;

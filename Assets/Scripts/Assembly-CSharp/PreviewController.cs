@@ -298,7 +298,7 @@ public sealed class PreviewController : MonoBehaviour
 			{
 				if (!arrNameSkin.Contains(text))
 				{
-					Debug.Log("ADDED: " + text);
+					//Debug.Log("ADDED: " + text);
 					arrNameSkin.Add(text);
 				}
 				else
@@ -307,7 +307,7 @@ public sealed class PreviewController : MonoBehaviour
 				}
 			}
 		}
-		Debug.Log("updatespisok 3 arrNameSkin.Count: " + arrNameSkin.Count + "\narrNameSkin: " + arrNameSkin);
+		//Debug.Log("updatespisok 3 arrNameSkin.Count: " + arrNameSkin.Count + "\narrNameSkin: " + arrNameSkin);
 	}
 
 	public void Highlight(GameObject go)

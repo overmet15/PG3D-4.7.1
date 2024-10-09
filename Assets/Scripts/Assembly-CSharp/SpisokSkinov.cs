@@ -170,7 +170,7 @@ public sealed class SpisokSkinov : MonoBehaviour
 	private void Start()
 	{
 		f = labelTitle.font;
-		expController = GameObject.FindGameObjectWithTag("ExperienceController").GetComponent<ExperienceController>();
+		expController = FindObjectOfType<ExperienceController>();
 		if (PlayerPrefs.GetInt(Defs.SkinEditorMode, 0) == 1)
 		{
 			expController.isShowRanks = true;
@@ -231,7 +231,9 @@ public sealed class SpisokSkinov : MonoBehaviour
 
 	private void OnGUI()
 	{
-		if (!showEnabled || coinsShop.thisScript.enabled)
+		if (viborChastiTelaController == null) viborChastiTelaController = FindObjectOfType<ViborChastiTela>();
+
+        if (!showEnabled || coinsShop.thisScript.enabled)
 		{
 			return;
 		}
@@ -328,6 +330,11 @@ public sealed class SpisokSkinov : MonoBehaviour
 						break;
 					}
 				}
+			}
+			else
+			{
+				namePlayer = PlayerPrefs.GetString("NamePlayer");
+				if (namePlayer == null) namePlayer = Defs.defaultPlayerName;
 			}
 			if (flag2)
 			{

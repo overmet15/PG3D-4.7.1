@@ -390,25 +390,33 @@ public sealed class StoreKitEventListener : MonoBehaviour
 
 	private void Start()
 	{
-		GameObject gameObject = Resources.Load("ActivityIndicator") as GameObject;
-		if (gameObject == null)
-		{
-			Debug.LogWarning("activityIndicatorPrefab == null");
-		}
-		else
-		{
-			purchaseActivityInd = UnityEngine.Object.Instantiate(gameObject) as GameObject;
-		}
-		if (Defs.AndroidEdition == Defs.RuntimeAndroidEdition.Amazon)
+		CreateInd();
+        /*if (Defs.AndroidEdition == Defs.RuntimeAndroidEdition.Amazon)
 		{
 			AmazonIAP.initiateItemDataRequest(coinIds);
 			return;
 		}
 		string publicKey = ((Defs.AndroidEdition == Defs.RuntimeAndroidEdition.GoogleLite) ? "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2fddncCpVwPU3m4ZzG8MfQTrxf3LBdjWwOV4LBRy2q4Kp/gPYi5QQaNJjsiQAbpIR51qSEJv9EomOi8+JZ4rWO52zOaLeumnKzpv++QVOllbGxaSwwSPDEZ0++eKmdsl5r+xzVvd20ey4n5tYotrRdYQfypZKYuHiMGvpsiIXf0rwv3yMNhVU7MDtbDgAs8zriBvPqCtkrRLnZdG+2dQEZ+hDPns0gO+N8y1V7odOHg4bDUceaK8al9DHcVKNItCMnOFyLHx++vKzHSLiXw2ojSUR1cfSbTkyyOTw9r9emHxxuGmc2/qWp7n/Qin1ksuAhyYFGOC9RClxxu1ygXKTQIDAQAB" : ((Defs.AndroidEdition != Defs.RuntimeAndroidEdition.GooglePro) ? string.Empty : "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi1OdsmAFxtISsT+CTl7yl5Jim+qDnp21yI0K71wfK4TSOgHVn1nii4PAn+kOvDe+oqW78NPAv1CpTF8ES+9UCgJQKSIo2VCd2z6SWsE/PVtGvIBOvpywZObB9i0wXQt5Y4KPXOUVH+AONZrETgKLjr0rmG86pT2GNWH6LbNt6PSPaEkW9lQgEgEX/2g5lE8XySWr005MpwdJt1SD79eaMRhwECT9xcNmpn0tNZdBe49jPEHhK9a2OtvIeqJS7/zdqOT0kvO+dQEOUTZZ8GnfPeAGxqdZp4TA34yA1UZm321aIMOTZGQfyaxx+B3twjjpwtNDK1KuzdHzsgQNnJ3VMwIDAQAB"));
 		//GoogleIAB.init(publicKey);
-		//GoogleIAB.setAutoVerifySignatures(false);
-	}
+        GoogleIAB.setAutoVerifySignatures(false);*/
+    }
 
+	/*void Update()
+	{
+		if (purchaseActivityInd == null) CreateInd();
+	}*/
+    void CreateInd()
+    {
+        GameObject gameObject = Resources.Load<GameObject>("ActivityIndicator");
+        if (gameObject == null)
+        {
+            Debug.LogWarning("activityIndicatorPrefab == null");
+        }
+        else
+        {
+            purchaseActivityInd = Instantiate(gameObject);
+        }
+    }
 	private void OnEnable()
 	{
 		if (Defs.AndroidEdition == Defs.RuntimeAndroidEdition.Amazon)
