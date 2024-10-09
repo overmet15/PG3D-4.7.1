@@ -7145,7 +7145,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4280159, g: 0.58145416, b: 0.87087226, a: 1}
+  m_IndirectSpecularColor: {r: 0.42794928, g: 0.58145094, b: 0.8720068, a: 1}
 --- !u!108 &708
 Light:
   m_ObjectHideFlags: 0
@@ -7904,15 +7904,15 @@ LightmapSettings:
   m_LightmapEditorSettings:
     serializedVersion: 9
     m_Resolution: 2
-    m_BakeResolution: 20
-    m_TextureWidth: 1024
+    m_BakeResolution: 5
+    m_TextureWidth: 256
     m_TextureHeight: 1024
     m_AO: 0
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
-    m_Padding: 20
-    m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000,
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000,
       type: 0}
     m_LightmapsBakeMode: 0
     m_TextureCompression: 1
@@ -7921,16 +7921,16 @@ LightmapSettings:
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 1
     m_MixedBakeMode: 2
-    m_BakeBackend: 0
+    m_BakeBackend: 1
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
-    m_PVRBounces: 2
+    m_PVRBounces: 4
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
     m_PVRFilterTypeAO: 0
-    m_PVRFilteringMode: 0
-    m_PVRCulling: 1
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 0
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
@@ -15522,7 +15522,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -15587,7 +15587,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -15717,7 +15717,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -15782,7 +15782,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -15804,7 +15804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &20073289
 Transform:
   m_ObjectHideFlags: 0
@@ -15977,7 +15977,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -16107,7 +16107,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -16172,7 +16172,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -16367,7 +16367,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -16692,7 +16692,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -16822,7 +16822,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -16887,7 +16887,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -16952,7 +16952,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -17082,7 +17082,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -17212,7 +17212,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -17277,7 +17277,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -17342,7 +17342,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -17537,7 +17537,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -17602,7 +17602,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -17732,7 +17732,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -17992,7 +17992,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -18057,7 +18057,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -18122,7 +18122,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -18382,7 +18382,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -18642,7 +18642,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -18772,7 +18772,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -18902,7 +18902,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -19032,7 +19032,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -19097,7 +19097,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -19227,7 +19227,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -19249,7 +19249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &490275972
 Transform:
   m_ObjectHideFlags: 0
@@ -19357,7 +19357,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -19422,7 +19422,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -19552,7 +19552,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -19747,7 +19747,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -19877,7 +19877,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -19942,7 +19942,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -20007,7 +20007,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -20397,7 +20397,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -20657,7 +20657,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -20722,7 +20722,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -20852,7 +20852,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -21047,7 +21047,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -21242,7 +21242,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -21827,7 +21827,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -22174,7 +22174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &768747035
 Transform:
   m_ObjectHideFlags: 0
@@ -22217,7 +22217,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -22412,7 +22412,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -32162,7 +32162,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -32357,7 +32357,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -32422,7 +32422,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -32487,7 +32487,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -32682,7 +32682,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -32747,7 +32747,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -32812,7 +32812,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -32877,7 +32877,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -33007,7 +33007,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -33072,7 +33072,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -33137,7 +33137,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -33202,7 +33202,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -33397,7 +33397,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -33527,7 +33527,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -33657,7 +33657,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -33722,7 +33722,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -33809,7 +33809,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1034824224
 Transform:
   m_ObjectHideFlags: 0
@@ -33852,7 +33852,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -33982,7 +33982,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -34177,7 +34177,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -34242,7 +34242,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -34307,7 +34307,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -34437,7 +34437,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -34459,7 +34459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1107871288
 Transform:
   m_ObjectHideFlags: 0
@@ -34567,7 +34567,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -34632,7 +34632,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -34827,7 +34827,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -34957,7 +34957,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -35087,7 +35087,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -35347,7 +35347,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -35412,7 +35412,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -35477,7 +35477,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -35737,7 +35737,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -35802,7 +35802,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -35932,7 +35932,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -36192,7 +36192,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -36322,7 +36322,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -36387,7 +36387,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -36517,7 +36517,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -36647,7 +36647,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -36712,7 +36712,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -36842,7 +36842,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -36972,7 +36972,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -37167,7 +37167,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -37232,7 +37232,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -37362,7 +37362,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -37427,7 +37427,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -37557,7 +37557,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -37687,7 +37687,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -37947,7 +37947,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -38142,7 +38142,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -38207,7 +38207,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -38337,7 +38337,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -38402,7 +38402,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -38532,7 +38532,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -38597,7 +38597,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -38727,7 +38727,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -38857,7 +38857,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -38922,7 +38922,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -39247,7 +39247,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -39377,7 +39377,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -39442,7 +39442,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -39507,7 +39507,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -39572,7 +39572,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -39637,7 +39637,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -39702,7 +39702,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -39832,7 +39832,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -39897,7 +39897,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -40157,7 +40157,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -40352,7 +40352,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -40417,7 +40417,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -40482,7 +40482,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -40742,7 +40742,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -40872,7 +40872,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -40937,7 +40937,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -41002,7 +41002,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -41067,7 +41067,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -41132,7 +41132,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -41197,7 +41197,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -41457,7 +41457,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -41522,7 +41522,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -41717,7 +41717,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -41782,7 +41782,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -41977,7 +41977,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -42107,7 +42107,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -42237,7 +42237,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -42302,7 +42302,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -42367,7 +42367,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -42432,7 +42432,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -42497,7 +42497,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -42627,7 +42627,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -42714,7 +42714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1951725930
 Transform:
   m_ObjectHideFlags: 0
@@ -42757,7 +42757,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -42887,7 +42887,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -43212,7 +43212,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -43601,7 +43601,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -43666,7 +43666,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -43731,7 +43731,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -43796,7 +43796,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -43861,7 +43861,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -43991,7 +43991,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -44056,7 +44056,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -44121,7 +44121,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -44186,7 +44186,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -44511,7 +44511,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
@@ -44576,7 +44576,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_AreaSize: {x: 0, y: 0}
   m_BounceIntensity: 0
   m_ColorTemperature: 0
