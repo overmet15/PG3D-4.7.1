@@ -49,15 +49,12 @@ TagManager:
   - SPAS
   - CameraWithEffects
   - GUIHelper
-  - 
-  - 
   - Glock
   - FAMAS
   - Bullet
   - ZombiCreator
   - InGameGUI
   - MultyPlayerCreateZoneCOOP
-  - 
   - Sword_2
   - Shovel
   - Scythe
@@ -129,7 +126,6 @@ TagManager:
   - cape_SkeletonLord
   - Barrett50Cal
   - SVD
-  - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
   Builtin Layer 2: Ignore Raycast

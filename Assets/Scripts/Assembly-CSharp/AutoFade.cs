@@ -37,45 +37,44 @@ public class AutoFade : MonoBehaviour
 		}
 	}
 
-private void Awake()
-{
-    Object.DontDestroyOnLoad(this);
-    m_Instance = this;
-    Shader shader = Shader.Find("Shader \"Plane/No zTest\" { SubShader { Pass { Blend SrcAlpha OneMinusSrcAlpha ZWrite Off Cull Off Fog { Mode Off } BindChannels { Bind \"Color\",color } } } }"); 
-    if (shader != null)
-    {
-        m_Material = new Material(shader);
-    }
-    else
-    {
-       // Debug.LogError("Shadr not finded");
-    }
-}
-
-
-	private void DrawQuad(Color aColor, float aAlpha)
+	private void Awake()
 	{
-		aColor.a = aAlpha;
-        //if (m_Material.shader != null)
-        //	m_Material.SetPass(0); -- This caused runtime errors, heh
-		GL.Color(aColor);
-		GL.PushMatrix();
-		GL.LoadOrtho();
-		GL.Begin(7);
-		GL.Vertex3(0f, 0f, -1f);
-		GL.Vertex3(0f, 1f, -1f);
-		GL.Vertex3(1f, 1f, -1f);
-		GL.Vertex3(1f, 0f, -1f);
-		GL.End();
-		GL.PopMatrix();
-	}
+		Object.DontDestroyOnLoad(this);
+		m_Instance = this;
+		//Shader shader = Shader.Find("Shader \"Plane/No zTest\" { SubShader { Pass { Blend SrcAlpha OneMinusSrcAlpha ZWrite Off Cull Off Fog { Mode Off } BindChannels { Bind \"Color\",color } } } }"); 
 
-	private IEnumerator Fade(float aFadeOutTime, float aFadeInTime, Color aColor)
+		m_Material = new Material(MiscFixes.autoFadeShader);
+
+    }
+
+
+    private void DrawQuad(Color aColor, float aAlpha)
+    {
+        aColor.a = aAlpha;
+        if (m_Material != null)
+        {
+            m_Material.SetColor("_Color", aColor);  // Set color with alpha to shader
+            m_Material.SetPass(0);
+        }
+        GL.PushMatrix();
+        GL.LoadOrtho();
+        GL.Begin(GL.QUADS);
+        GL.Color(aColor);
+        GL.Vertex3(0f, 0f, 0f); // Adjust z to be closer to 0
+        GL.Vertex3(0f, 1f, 0f);
+        GL.Vertex3(1f, 1f, 0f);
+        GL.Vertex3(1f, 0f, 0f);
+        GL.End();
+        GL.PopMatrix();
+    }
+
+
+    private IEnumerator Fade(float aFadeOutTime, float aFadeInTime, Color aColor)
 	{
 		float t = 0f;
 		while (t < 1f)
-		{
-			yield return new WaitForEndOfFrame();
+        {
+            yield return new WaitForEndOfFrame();
 			t = Mathf.Clamp01(t + Time.deltaTime / aFadeOutTime);
 			DrawQuad(aColor, t);
 		}
@@ -106,7 +105,7 @@ private void Awake()
 			yield return new WaitForEndOfFrame();
 		}
 		m_Fading = false;
-	}
+    }
 
 	private void StartFade(float aFadeOutTime, float aFadeInTime, Color aColor)
 	{
