@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Prime31;
-using Fuckhead.PixlGun3D;
+using Rilisoft.PixlGun3D;
 using UnityEngine;
 using System.Linq.Expressions;
 

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Fuckhead.PixlGun3D
+namespace Rilisoft.PixlGun3D
 {
 	internal sealed class IosFacebookFacade : FacebookFacade
 	{

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Fuckhead.PixlGun3D
+namespace Rilisoft.PixlGun3D
 {
 	public sealed class RegenerationMode : MonoBehaviour
 	{

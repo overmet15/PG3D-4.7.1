@@ -1,6 +1,6 @@
 using System;
 using Prime31;
-using Fuckhead.PixlGun3D;
+using Rilisoft.PixlGun3D;
 using UnityEngine;
 
 public sealed class SpisokSkinov : MonoBehaviour

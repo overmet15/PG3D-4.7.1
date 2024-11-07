@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using Prime31;
-using Fuckhead.PixlGun3D;
+using Rilisoft.PixlGun3D;
 using UnityEngine;
 
 public sealed class MainMenu : MonoBehaviour
@@ -237,7 +237,7 @@ public sealed class MainMenu : MonoBehaviour
 
 	private static string ReadPrefsFileToString()
 	{
-		if (Application.platform == RuntimePlatform.Android)
+		/*if (Application.platform == RuntimePlatform.Android)
 		{
 			try
 			{
@@ -250,7 +250,7 @@ public sealed class MainMenu : MonoBehaviour
 			{
 				Debug.LogException(exception);
 			}
-		}
+		}*/
 		return string.Empty;
 	}
 

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Fuckhead.PixlGun3D
+namespace Rilisoft.PixlGun3D
 {
 	internal sealed class LevelCompleteScript : MonoBehaviour
 	{

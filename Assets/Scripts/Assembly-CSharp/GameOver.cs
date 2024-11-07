@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Fuckhead.PixlGun3D;
+using Rilisoft.PixlGun3D;
 using UnityEngine;
 
 public sealed class GameOver : MonoBehaviour

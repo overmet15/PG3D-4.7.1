@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Fuckhead.PixlGun3D
+namespace Rilisoft.PixlGun3D
 {
 	internal abstract class Preferences : IEnumerable, IDictionary<string, string>, ICollection<KeyValuePair<string, string>>, IEnumerable<KeyValuePair<string, string>>
 	{

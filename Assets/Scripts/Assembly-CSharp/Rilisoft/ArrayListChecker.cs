@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace Fuckhead.PixlGun3D
+namespace Rilisoft.PixlGun3D
 {
 	internal sealed class ArrayListChecker : IDisposable
 	{

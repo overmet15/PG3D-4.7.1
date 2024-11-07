@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public sealed class Switcher : MonoBehaviour
 {
@@ -658,5 +659,6 @@ public sealed class Switcher : MonoBehaviour
 			break;
 		}
 		Application.LoadLevel(text);
+		//SceneManager.LoadScene(text);
 	}
 }

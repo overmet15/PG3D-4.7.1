@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Fuckhead.PixlGun3D;
+using Rilisoft.PixlGun3D;
 using UnityEngine;
 
 public sealed class StoreKitEventListener : MonoBehaviour

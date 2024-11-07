@@ -733,10 +733,10 @@ public sealed class Player_move_c : MonoBehaviour
 		Rect position4 = new Rect(position3.x - num14, 0f, num14, num10);
 		if (PlayerPrefs.GetInt("MultyPlayer") == 1 && !_pauser.paused && PlayerPrefs.GetInt("ChatOn", 1) == 1 && GUI.Button(position4, string.Empty, chatStyle))
 		{
-			showChat = true;
+			/*showChat = true;
 			_weaponManager.currentWeaponSounds.gameObject.SetActive(false);
 			GameObject gameObject3 = (GameObject)UnityEngine.Object.Instantiate(chatViewer);
-			gameObject3.GetComponent<ChatViewrController>().PlayerObject = base.gameObject;
+			gameObject3.GetComponent<ChatViewrController>().PlayerObject = base.gameObject;*/
 		}
 		Rect rect = new Rect(0f, 0f, 73f * (float)Screen.width / 1024f, 73f * (float)Screen.width / 1024f);
 		AmmoBox.fontSize = Mathf.RoundToInt(18f * (float)Screen.width / 1024f);

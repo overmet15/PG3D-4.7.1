@@ -11177,7 +11177,7 @@ NavMeshSettings:
     accuratePlacement: 1
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 162b33f3e59231445ae548c3bb553f2b, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 0dad747a371a9da4c84829a2b3b031be, type: 2}
 --- !u!198 &609
 ParticleSystem:
   m_ObjectHideFlags: 0

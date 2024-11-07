@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Security.Cryptography;
-using Fuckhead.PixlGun3D;
+using Rilisoft.PixlGun3D;
 using UnityEngine;
 
 public sealed class Defs

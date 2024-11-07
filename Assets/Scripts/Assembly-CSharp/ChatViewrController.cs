@@ -85,6 +85,7 @@ public class ChatViewrController : MonoBehaviour
 
 	private void Update()
 	{
+		if (Input.GetKeyDown(KeyCode.Escape)) closeChat();
 		labelChat.GetComponent<UILabel>().text = string.Empty;
 		if (PlayerObject == null)
 		{
