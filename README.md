@@ -18,7 +18,9 @@
 3. Clone this repo on your computer.
 4. Open it with Unity Hub.
    - Make sure that you have proper unity version installed first.
-5. Open it and you're done.
+5. Set up photon ID. (optional)
+   - Go to Photon website, create new photon app using photon PUN, and put app ID in __PhotonServerSettings__ in __Resources__ folder
+6. Open it and you're done.
    - The *proper* way of playing it, is opening scene called __AppCenter__ and then running it.
   
 ## Building
@@ -53,7 +55,7 @@ If you want to build for Android:
 5. Done! Now you can enjoy your build!
 
 #### Android 
-- Work In Progress.
+- I have no idea how to compile for android properly, please, if u were able to compile and make it run on an actual device, post a tutorial or contact me.
 
 ## Wiki
 Work In Progress.
