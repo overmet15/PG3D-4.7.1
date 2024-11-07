@@ -5,15 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class WindowsMouseManager : MonoBehaviour
 {
-	public static WindowsMouseManager Instance;
+	public static Vector2 MouseInputs;
 
-	public Vector2 MouseInputs;
-
-	public bool MouseLocked {get; private set;}
-
+	public static bool MouseLocked
+	{
+		get
+		{
+            return Cursor.lockState == CursorLockMode.Locked;
+        }
+		set
+		{
+			Cursor.lockState = value ? CursorLockMode.Locked : CursorLockMode.None;
+            Cursor.visible = !value;
+        }
+	}
 	void Awake()
 	{
-		Instance = this;
 		DontDestroyOnLoad(gameObject);
 	}
 
@@ -25,27 +32,12 @@ public class WindowsMouseManager : MonoBehaviour
 
     void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.F1)) ToggleMouse();
+		if (Input.GetKeyDown(KeyCode.F1)) MouseLocked = !MouseLocked;
 		if (MouseLocked)
 		{
 			MouseInputs.x = Input.GetAxis("Mouse X");
 			MouseInputs.y = Input.GetAxis("Mouse Y"); 
 		} 
 		else MouseInputs = Vector2.zero;
-    }
-	public void ToggleMouse()
-	{
-		MouseLocked = !MouseLocked;
-		if (MouseLocked) Cursor.lockState = CursorLockMode.Locked;
-		else Cursor.lockState = CursorLockMode.None;
-	}
-	public void SetMouseLock(bool setTo)
-	{
-		if (MouseLocked != setTo)
-        {
-            MouseLocked = setTo;
-            if (setTo) Cursor.lockState = CursorLockMode.Locked;
-            else Cursor.lockState = CursorLockMode.None;
-        }
     }
 }

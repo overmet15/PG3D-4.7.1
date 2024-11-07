@@ -42,10 +42,10 @@ public sealed class AppsMenu : MonoBehaviour
 	{
 		if (!Application.isEditor)
 		{
-			//expPath = GooglePlayDownloader.GetExpansionFilePath();
-		}
-		StartCoroutine(loadLevel());
-	}
+            //expPath = GooglePlayDownloader.GetExpansionFilePath();
+        }
+        Application.LoadLevel("Loading");
+    }
 
 	private void LoadLoading()
 	{
@@ -74,29 +74,5 @@ public sealed class AppsMenu : MonoBehaviour
 				GUI.Label(new Rect(10f, 10f, Screen.width - 10, 20f), "External storage is not available!");
 			}
 		}*/
-	}
-
-	protected IEnumerator loadLevel()
-	{
-		//if (!Application.isEditor && ApplicationBinarySplitted)
-		//{
-			//string mainPath = GooglePlayDownloader.GetMainOBBPath(expPath);
-			/*if (Debug.isDebugBuild)
-			{
-				Debug.Log(string.Format("ExpPath: {0}, MainPath: {1}", expPath, mainPath));
-			}
-			if (mainPath == null)
-			{
-				GooglePlayDownloader.FetchOBB();
-			}
-			while (mainPath == null)
-			{
-				log("waiting mainPath " + mainPath);
-				yield return new WaitForSeconds(0.5f);
-				mainPath = GooglePlayDownloader.GetMainOBBPath(expPath);
-			}*/
-		//}
-		yield return new WaitForSeconds(0.5f);
-		Application.LoadLevel("Loading");
 	}
 }

@@ -95,7 +95,7 @@ internal sealed class FirstPersonControlSharp : MonoBehaviour
 
 	private void Start()
 	{
-        WindowsMouseManager.Instance.SetMouseLock(true);
+		WindowsMouseManager.MouseLocked = true;
         _invert = PlayerPrefs.GetInt(Defs.InvertCamSN, 0) == 1;
 		startForwardSpeed = forwardSpeed;
 		startBackwardSpeed = backwardSpeed;
@@ -330,7 +330,7 @@ internal sealed class FirstPersonControlSharp : MonoBehaviour
 		}
 #else
 
-        vector3 = WindowsMouseManager.Instance.MouseInputs;
+        vector3 = WindowsMouseManager.MouseInputs;
 		if (Defs.IsTraining && TrainingController.stepTraining == TrainingController.stepTrainingList["SwipeToRotate"] && !vector3.Equals(Vector2.zero))
 			TrainingController.isNextStep = TrainingController.stepTrainingList["SwipeToRotate"];
 		//vector3 *= 2.5f;
@@ -342,6 +342,6 @@ internal sealed class FirstPersonControlSharp : MonoBehaviour
 	}
 	void OnDestroy()
 	{
-        WindowsMouseManager.Instance.SetMouseLock(false);
+        WindowsMouseManager.MouseLocked = false;
     }
 }

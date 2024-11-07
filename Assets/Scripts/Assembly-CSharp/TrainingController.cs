@@ -154,7 +154,7 @@ public class TrainingController : MonoBehaviour
 		}
 		if (stepTraining == stepTrainingList["InterTheShop"])
 		{
-			WindowsMouseManager.Instance.SetMouseLock(false);
+			WindowsMouseManager.MouseLocked = false;
 			player_move_c = GameObject.FindGameObjectWithTag("PlayerGun").GetComponent<Player_move_c>();
 			shop = player_move_c.buyStyle.normal.background;
 			shop_n = player_move_c.buyStyle.active.background;
@@ -170,7 +170,7 @@ public class TrainingController : MonoBehaviour
 		}
 		if (stepTraining == stepTrainingList["TapToShoot"])
 		{
-            WindowsMouseManager.Instance.SetMouseLock(true);
+            WindowsMouseManager.MouseLocked = true;
             isCanceled = true;
 			maxStepAnim = 2;
 			speedAnim = 3f;

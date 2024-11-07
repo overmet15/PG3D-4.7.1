@@ -1,26 +1,31 @@
 Shader "Decal/Mobile/Cutout Diffuse" {
 Properties {
- _MainTex ("Base (RGB) Trans (A)", 2D) = "white" {}
- _Cutoff ("Alpha cutoff", Range(0,1)) = 0.5
+	_MainTex ("Base (RGB) Trans (A)", 2D) = "white" {}
+	_Cutoff ("Alpha cutoff", Range(0,1)) = 0.5
 }
-	//DummyShaderTextExporter
+
+SubShader {
+	Tags {"Queue"="AlphaTest" "IgnoreProjector"="True" "RenderType"="TransparentCutout"}
+	Offset -5,-5
 	
-	SubShader{
-		Tags { "RenderType" = "Opaque" }
-		LOD 200
-		CGPROGRAM
-#pragma surface surf Standard fullforwardshadows
-#pragma target 3.0
-		sampler2D _MainTex;
-		struct Input
-		{
-			float2 uv_MainTex;
-		};
-		void surf(Input IN, inout SurfaceOutputStandard o)
-		{
-			fixed4 c = tex2D(_MainTex, IN.uv_MainTex);
-			o.Albedo = c.rgb;
-		}
-		ENDCG
-	}
+CGPROGRAM
+#pragma surface surf Lambert noforwardadd alphatest:_Cutoff
+
+sampler2D _MainTex;
+
+struct Input {
+	float2 uv_MainTex;
+};
+
+void surf (Input IN, inout SurfaceOutput o) {
+	fixed4 c = tex2D(_MainTex, IN.uv_MainTex);
+	o.Albedo = c.rgb;
+	o.Alpha = c.a;
+}
+ENDCG
+}
+
+	// Fallback to Unity's shaders.
+
+Fallback "Decal/Cutout VertexLit"
 }

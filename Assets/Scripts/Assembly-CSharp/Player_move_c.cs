@@ -1841,7 +1841,7 @@ public sealed class Player_move_c : MonoBehaviour
 			base.transform.parent.transform.rotation = GlobalGameController.rotMyPlayer;
 			PlayerPrefs.SetInt("StartAfterDisconnect", 0);
 		}
-		if (isMine) WindowsMouseManager.Instance.SetMouseLock(true);
+		if (isMine) WindowsMouseManager.MouseLocked = true;
 	}
 
 	private IEnumerator AddCampaignWeapon()
@@ -3085,7 +3085,7 @@ public sealed class Player_move_c : MonoBehaviour
 		{
 			AddButtonHandlers();
         }
-        WindowsMouseManager.Instance.SetMouseLock(!_pauser.paused);
+		WindowsMouseManager.MouseLocked = !_pauser.paused;
     }
 
 	private void SetInApp()

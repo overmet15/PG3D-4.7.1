@@ -131,7 +131,7 @@ public class JoystickSharp : MonoBehaviour
 
 	private void Start()
 	{
-		WindowsMouseManager.Instance.SetMouseLock(true);
+		WindowsMouseManager.MouseLocked = true;
 		if (!touchPad)
 		{
 			guiPixelInset = new Rect(0f, 0f, 128f, 128f);
@@ -248,7 +248,7 @@ public class JoystickSharp : MonoBehaviour
         //PC Stuff
         if (touchPad) // Avoid doubling of inputs and stuff
         {
-            if (Input.GetMouseButton(0) && WindowsMouseManager.Instance.MouseLocked && (!Defs.IsTraining || TrainingController.stepTraining >= TrainingController.stepTrainingList["TapToShoot"]))
+            if (Input.GetMouseButton(0) && WindowsMouseManager.MouseLocked && (!Defs.IsTraining || TrainingController.stepTraining >= TrainingController.stepTrainingList["TapToShoot"]))
             {
                 _playerGun.GetComponent<Player_move_c>().ShotPressed();
             }
