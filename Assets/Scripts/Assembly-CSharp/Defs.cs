@@ -1287,20 +1287,6 @@ public sealed class Defs
 		}
 	}
 
-	internal static SignedPreferences SignedPreferences
-	{
-		get
-		{
-			if (_signedPreferences == null)
-			{
-				RSACryptoServiceProvider rSACryptoServiceProvider = new RSACryptoServiceProvider(512);
-				rSACryptoServiceProvider.ImportCspBlob(_rsaParameters);
-				_signedPreferences = new RsaSignedPreferences(new PersistentPreferences(), rSACryptoServiceProvider, SystemInfo.deviceUniqueIdentifier);
-			}
-			return _signedPreferences;
-		}
-	}
-
 	static Defs()
 	{
 		isSoundMusic = false;

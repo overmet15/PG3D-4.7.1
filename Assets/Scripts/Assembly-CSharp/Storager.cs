@@ -52,7 +52,7 @@ public static class Storager
 	public static bool synchronize()
 	{
 		CryptoPlayerPrefs.Save();
-		Defs.SignedPreferences.Save();
+		//Defs.SignedPreferences.Save();
 		return true;
 	}
 
@@ -72,13 +72,13 @@ public static class Storager
 	public static void removeObjectForKey(string key)
 	{
 		CryptoPlayerPrefs.DeleteKey(key);
-		Defs.SignedPreferences.Remove(key);
+		//Defs.SignedPreferences.Remove(key);
 	}
 
 	public static void removeAll()
 	{
 		CryptoPlayerPrefs.DeleteAll();
-		Defs.SignedPreferences.Clear();
+		//Defs.SignedPreferences.Clear();
 	}
 
 	public static void setInt(string key, int val, bool useICloud)
