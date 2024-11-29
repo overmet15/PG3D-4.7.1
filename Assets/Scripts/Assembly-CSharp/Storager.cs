@@ -59,13 +59,13 @@ public static class Storager
 	public static bool hasKey(string key)
 	{
 		bool flag = CryptoPlayerPrefs.HasKey(key);
-		string value;
+		/*string value;
 		int result;
 		if (key.Equals(Defs.Coins) && !flag && Defs.SignedPreferences.TryGetValue(Defs.Coins, out value) && Defs.SignedPreferences.Verify(Defs.Coins) && int.TryParse(value, out result))
 		{
 			setInt(Defs.Coins, Math.Max(0, result), false);
 			return true;
-		}
+		}*/
 		return flag;
 	}
 
@@ -85,10 +85,10 @@ public static class Storager
 	{
 		_writeCount++;
 		CryptoPlayerPrefs.SetInt(key, val);
-		if (key.Equals(Defs.Coins))
+		/*if (key.Equals(Defs.Coins))
 		{
 			Defs.SignedPreferences.Add(Defs.Coins, val.ToString());
-		}
+		}*/
 	}
 
 	public static int getInt(string key, bool useICloud)
@@ -98,12 +98,12 @@ public static class Storager
 		{
 			return CryptoPlayerPrefs.GetInt(key);
 		}
-		string value;
+		/*string value;
 		int result;
 		if (key.Equals(Defs.Coins) && Defs.SignedPreferences.TryGetValue(Defs.Coins, out value) && Defs.SignedPreferences.Verify(Defs.Coins) && int.TryParse(value, out result))
 		{
 			return result;
-		}
+		}*/
 		return 0;
 	}
 

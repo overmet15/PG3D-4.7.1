@@ -26,8 +26,7 @@ public class WindowsMouseManager : MonoBehaviour
 
 	void Start()
 	{
-		MouseLocked = true;
-		Cursor.lockState = CursorLockMode.None;
+		MouseLocked = false;
 	}
 
     void Update()
