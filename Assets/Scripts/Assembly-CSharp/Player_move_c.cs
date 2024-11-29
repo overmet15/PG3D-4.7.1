@@ -3060,6 +3060,7 @@ public sealed class Player_move_c : MonoBehaviour
 
 	private void SetPause()
 	{
+		if (ChatViewrController.instance != null) return;
 		if (_pauser == null)
 		{
 			Debug.LogWarning("SetPause(): _pauser is null.");

@@ -85,6 +85,8 @@ public class ChatViewrController : MonoBehaviour
 			mKeyboard = null;
 		}
 		if (myKeyboardPC != null) Destroy(myKeyboardPC.gameObject);
+
+		WindowsMouseManager.MouseLocked = true;
 	}
 
 	void Awake()
