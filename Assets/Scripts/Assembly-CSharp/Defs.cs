@@ -33,8 +33,6 @@ public sealed class Defs
 
 	public static string PromSceneName;
 
-	private static SignedPreferences _signedPreferences;
-
 	private static readonly byte[] _rsaParameters;
 
 	public static float HalfLength
