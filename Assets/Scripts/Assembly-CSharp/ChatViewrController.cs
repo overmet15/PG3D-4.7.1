@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class ChatViewrController : MonoBehaviour
 {
+	public static ChatViewrController instance;
+
 	public GameObject PlayerObject;
 
 	private TouchScreenKeyboard mKeyboard;
@@ -21,6 +23,8 @@ public class ChatViewrController : MonoBehaviour
 	public bool isHold;
 
 	public AudioClip sendChatClip;
+
+	public KeyboardListener myKeyboardPC;
 
 	public void clickButton(string nameButton)
 	{
@@ -47,6 +51,7 @@ public class ChatViewrController : MonoBehaviour
 		{
 			Debug.Log("KeyboardButton");
 			mKeyboard.active = true;
+			myKeyboardPC = KeyboardListener.GetOrCreate(postChat);
 		}
 	}
 
@@ -57,7 +62,11 @@ public class ChatViewrController : MonoBehaviour
 		{
 			NGUITools.PlaySound(sendChatClip);
 		}
+		#if !UNITY_STANDALONE
 		PlayerObject.GetComponent<Player_move_c>().SendChat(_text);
+		#else
+		PlayerObject.GetComponent<Player_move_c>().SendChat(myKeyboardPC.pcString);
+		#endif
 	}
 
 	public void closeChat()
@@ -65,7 +74,7 @@ public class ChatViewrController : MonoBehaviour
 		mKeyboard.active = false;
 		mKeyboard = null;
 		PlayerObject.GetComponent<Player_move_c>().showChat = false;
-		Object.Destroy(base.gameObject);
+		Destroy(base.gameObject);
 	}
 
 	private void OnDestroy()
@@ -75,12 +84,20 @@ public class ChatViewrController : MonoBehaviour
 			mKeyboard.active = false;
 			mKeyboard = null;
 		}
+		if (myKeyboardPC != null) Destroy(myKeyboardPC.gameObject);
 	}
 
+	void Awake()
+	{
+		instance = this;
+	}
 	private void Start()
 	{
 		_weaponManager = GameObject.FindGameObjectWithTag("WeaponManager").GetComponent<WeaponManager>();
 		mKeyboard = TouchScreenKeyboard.Open(string.Empty, TouchScreenKeyboardType.Default, false, false);
+		#if UNITY_STANDALONE
+		myKeyboardPC = KeyboardListener.GetOrCreate(postChat);
+		#endif
 	}
 
 	private void Update()
@@ -116,6 +133,7 @@ public class ChatViewrController : MonoBehaviour
 			UILabel component = labelChat.GetComponent<UILabel>();
 			component.text = component.text + text + PlayerObject.GetComponent<Player_move_c>().messages[num].text + "\n";
 		}
+		#if !UNITY_STANDALONE
 		if (mKeyboard == null)
 		{
 			return;
@@ -164,5 +182,6 @@ public class ChatViewrController : MonoBehaviour
 				closeChat();
 			}
 		}
+		#endif
 	}
 }

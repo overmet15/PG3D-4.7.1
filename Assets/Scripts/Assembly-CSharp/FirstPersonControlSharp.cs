@@ -190,6 +190,7 @@ internal sealed class FirstPersonControlSharp : MonoBehaviour
 		Vector3 vector = base.transform.TransformDirection(new Vector3(moveTouchPad.position.x * (float)((!character.isGrounded) ? 1 : 1), 0f, moveTouchPad.position.y));
 		#else
 		Vector3 vector = base.transform.TransformDirection(new Vector3(Input.GetAxis("Horizontal") * (float)((!character.isGrounded) ? 1 : 1), 0f, Input.GetAxis("Vertical")));
+		if (ChatViewrController.instance != null) vector = Vector3.zero;
 		#endif
 		if (Defs.IsTraining && TrainingController.stepTraining < TrainingController.stepTrainingList["TapToMove"])
 		{
@@ -335,6 +336,7 @@ internal sealed class FirstPersonControlSharp : MonoBehaviour
 			TrainingController.isNextStep = TrainingController.stepTrainingList["SwipeToRotate"];
 		//vector3 *= 2.5f;
 		@float *= 15f;
+		if (ChatViewrController.instance != null) vector3 = Vector2.zero;
 #endif
         vector3 *= Time.deltaTime * @float * num2;
         thisTransform.Rotate(0f, vector3.x, 0f, Space.World);
